@@ -12,16 +12,16 @@ var Stats = function () {
 	var container = document.createElement( 'div' );
 	container.id = 'stats';
 	container.addEventListener( 'mousedown', function ( event ) { event.preventDefault(); setMode( ++ mode % 2 ) }, false );
-	container.style.cssText = 'padding: 30px 0px 10px 275px; width:160px; opacity:0.9; cursor:pointer';
+	container.style.cssText = 'padding: 350px 0px 0px 30px; width:160px; opacity:0.9; cursor:pointer';
 
 	var fpsDiv = document.createElement( 'div' );
 	fpsDiv.id = 'fps';
-	fpsDiv.style.cssText = 'padding: 10px 5px 10px 5px; width:120px; text-align:center; background-color:lightgray';
+	fpsDiv.style.cssText = 'padding: 5px 0px 5px 0px; width:120px; text-align:left; background-color:lightgray';
 	container.appendChild( fpsDiv );
 
 	var fpsText = document.createElement( 'div' );
 	fpsText.id = 'fpsText';
-	fpsText.style.cssText = 'color:black; font-family:Helvetica,Arial,sans-serif; font-size:12px; font-weight:bold; line-height:15px';
+	fpsText.style.cssText = 'padding: 0px 0px 5px 10px; color:black; font-family:Helvetica,Arial,sans-serif; font-size:12px; line-height:15px';
 	fpsText.innerHTML = 'FPS';
 	fpsDiv.appendChild( fpsText );
 
@@ -40,12 +40,12 @@ var Stats = function () {
 
 	var msDiv = document.createElement( 'div' );
 	msDiv.id = 'ms';
-	msDiv.style.cssText = 'padding: 10px 5px 10px 5px; width:120px; text-align:center; background-color:lightgray';
+	msDiv.style.cssText = 'padding: 5px 0px 5px 0px; width:120px; text-align:left; background-color:lightgray';
 	container.appendChild( msDiv );
 
 	var msText = document.createElement( 'div' );
 	msText.id = 'msText';
-	msText.style.cssText = 'color:black; font-family:Helvetica,Arial,sans-serif; font-size:12px; font-weight:bold; line-height:15px';
+	msText.style.cssText = 'padding: 0px 0px 5px 10px; color:black; font-family:Helvetica,Arial,sans-serif; font-size:12px; line-height:15px';
 	msText.innerHTML = 'MS';
 	msDiv.appendChild( msText );
 
