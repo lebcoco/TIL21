@@ -47,4 +47,10 @@ class MemoRepositoryTests {
     Memo memo = memoRepository.getOne(mno);
     System.out.println("===============================");   System.out.println(memo);
   }
+  // 수정 작업 테스트
+  @Test
+  public void testUpdate() {
+    Memo memo = Memo.builder().mno(100L).memoText("Update Text").build();
+    System.out.println(memoRepository.save(memo));
+  }
 }
