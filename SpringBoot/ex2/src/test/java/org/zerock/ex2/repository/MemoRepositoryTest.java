@@ -59,4 +59,11 @@ class MemoRepositoryTests {
     Memo memo = Memo.builder().mno(100L).memoText("Update Text").build();
     System.out.println(memoRepository.save(memo));
   }
+
+  // 삭제 작업 테스트
+  @Test
+  public void testDelete() {
+    Long mno = 100L;
+    memoRepository.deleteById(mno);
+  }
 }
