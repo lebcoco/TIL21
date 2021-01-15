@@ -1,8 +1,8 @@
-**:date: 2021. 01. 14. 목**
+**:date: 2021. 01. 15. 금**
 
 :clock8: **08:30-**
 
-:bookmark_tabs: **스프링부트**
+:bookmark_tabs: **스프링부트** - MariaDB와 **Spring Data JPA**
 
 :green_book: **코드로 배우는 스프링부트 웹프로젝트**
 
@@ -32,7 +32,7 @@
 
 
 
-:computer: **쿼리 메서드와 Pageable 결합(74p-)** 
+:computer: **쿼리 메서드와 Pageable 결합(74p-)**
 
 * **step1. **
   * 내용
