@@ -122,4 +122,12 @@ class MemoRepositoryTests {
       System.out.println(memo);
     }
   }
+
+  // 쿼리 메서드와 Pageable의 결합
+  @Test
+  public void testQueryMethodWithPagable() {
+    Pageable pageable = PageRequest.of(0, 10, Sort.by("mno").descending());
+    Page<Memo> result = memoRepository.findByMnoBetween(10L,50L, pageable);
+    result.get().forEach(memo -> System.out.println(memo));
+  }
 }

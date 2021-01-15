@@ -10,13 +10,14 @@
 
 ---
 
-:computer: **페이징 처리 - 정렬 조건 추가(69p)** 
+:computer: **페이징 처리 - 정렬 조건 추가(69p-72p)** 
 
 * **step1. 페이징 처리 테스트**
-  * 코드 및  실행 화면
-
-    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0115실습_페이징처리-정렬69p-0.PNG)
-
+  
+* 코드 및  실행 화면
+  
+  ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0115실습_페이징처리-정렬69p-0.PNG)
+  
 * **step2. 페이징 처리 정렬-엔티티 순서**
 
   * 코드 및  실행 화면
@@ -31,11 +32,14 @@
 
 
 
+:computer: **쿼리 메서드와 Pageable 결합(74p-)** 
+
+* **step1. **
+  * 내용
+
 
 
 :bookmark_tabs: **용어 및 개념 정리**
-
-
 
 * 용어1
   * 
