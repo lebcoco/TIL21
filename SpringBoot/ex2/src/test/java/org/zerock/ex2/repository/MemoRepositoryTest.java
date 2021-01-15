@@ -1,6 +1,7 @@
 package org.zerock.ex2.repository;
 
 
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
@@ -112,6 +113,13 @@ class MemoRepositoryTests {
     });
   }
 
-  // 
+  // 쿼리 메서드 테스트
+  @Test
+  public void testQueryMethods(){
+    List<Memo> list = memoRepository.findByMnoBetweenOrderByMnoDesc(70L, 80L);
 
+    for(Memo memo : list){
+      System.out.println(memo);
+    }
+  }
 }
