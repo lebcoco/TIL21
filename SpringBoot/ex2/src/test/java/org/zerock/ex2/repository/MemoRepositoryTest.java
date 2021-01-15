@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 import org.zerock.ex2.entity.Memo;
 
@@ -91,8 +92,26 @@ class MemoRepositoryTests {
     System.out.println("first page?: " + result.isFirst());
     //시작 페이지(0) 여부
     System.out.println("---------------------------------------");
+
+    // 페이지 정렬1 - 엔티티의 순차적인 순서
     for (Memo memo : result.getContent()){
       System.out.println(memo);
     }
   }
+
+  // 페이지 정렬2 - mno필드 값 역순(desc)으로 정렬
+  @Test
+  public void testSort() {
+    Sort sort1 = Sort.by("mno").descending();
+    Sort sort2 = Sort.by("memoText").ascending();
+    Sort sortAll = sort1.and(sort2); //and를 이용한 연결
+    Pageable pageable = PageRequest.of(0, 10, sortAll);
+    Page<Memo> result = memoRepository.findAll(pageable);
+    result.get().forEach(memo -> {
+      System.out.println(memo);
+    });
+  }
+
+  // 
+
 }
