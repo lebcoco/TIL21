@@ -183,7 +183,38 @@
     * 별도의 처리가 없음애도 문자열을 자동으로 `""`이 추가되어 문자열이 된다.
     * 같이 전송된 dto는 Json 포맷의 문자열이 된 것을 볼 수 있다.
 
+* **th:blcok**
+
+  * 별도의 태그가 필요하지 않다. 반드시 태그에 붙어 `th:text`나 `th:value`등을 써야 하는 제약이 없다.
+
+  * 앞서 'sno가 5로 나눈 나머지가 0인 경우에는 sno를 출력하고, 그렇지 않다면 first를 출력해야하는 경우' 다시 구성해보자.
+
+    ```html
+    <!-- th:blcok -->
+      <p> ▼ Thymeleaf th:block ▼ </p>
+      <ul>
+        <th:block th:each="dto: ${list}">
+          <li th:text="${dto.sno % 5 == 0}?${dto.sno}:${dto.first}"></li>
+        </th:block>
+      </ul>
+    </ul>
+    ```
+
+
+
 ---
+
+
+
+####  :tulip: 링크 처리
+
+* **내용**
+
+* 
+
+
+
+
 
 
 

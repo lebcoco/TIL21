@@ -57,5 +57,4 @@ public class SampleController {
   public void ex3(){
     log.info("ex3");
   }
-  
 }

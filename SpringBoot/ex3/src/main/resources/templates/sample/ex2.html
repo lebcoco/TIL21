@@ -46,6 +46,12 @@
   <p> ▼ Thymeleaf 삼항연산자 + 특정 CSS ▼ </p>
   <li th:each="dto, status : ${list}" th:class="${dto.sno % 5==0}? 'target'" th:text="${dto}">
   </li>
+
+  <!-- th:blcok -->
+  <p> ▼ Thymeleaf th:block ▼ </p>
+    <th:block th:each="dto: ${list}">
+      <li th:text="${dto.sno % 5 == 0}?${dto.sno}:${dto.first}"></li>
+    </th:block>
 </ul>
 </body>
 </html>
