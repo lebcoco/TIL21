@@ -5,6 +5,11 @@
   <title>Title</title>
 </head>
 <body>
+<style>
+  .target{
+      background-color:cornsilk;
+  }
+</style>
 <ul>
   <!--  Thymeleaf 반복문 처리
         th:each = "변수: ${목록}" -->
@@ -37,6 +42,10 @@
   <li th:each="dto, status : ${list}" th:text="${dto.sno % 5==0}? ${dto.sno}: ${dto.first}">
   </li>
 
+  <!--  Thymeleaf 삼항연산자 + 특정 CSS -->
+  <p> ▼ Thymeleaf 삼항연산자 + 특정 CSS ▼ </p>
+  <li th:each="dto, status : ${list}" th:class="${dto.sno % 5==0}? 'target'" th:text="${dto}">
+  </li>
 </ul>
 </body>
 </html>

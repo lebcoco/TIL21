@@ -39,6 +39,8 @@
   * 장단점
     1. JSP는 사실 서블릿이다보니 뭐든지 할 수 있다는게 장점이자 단점이 되겠습니다. MVC 구조가 주로 사용되면서 JSP는 뷰만 담당하고, JSP에 비즈니스 로직을 넣으면 디버깅 및 유지보수가 힘들어진다고 하여 요즘은 JSP에서는 자바 코드를 사용하지 못하게 하는게 일반적입니다.
 
+---
+
 
 
 ####  :tulip: loop in Thymeleaf
@@ -125,11 +127,49 @@
 
   * 단순 if와 같이 2개의 항만으로 처리할 수 있다.
 
-    ```
-    
+  * sno가 5로 나눈 나머지가 0인 경우 sno만 출력하고, 나머지는 first를 출력하고 싶다면
+
+    ```html
+    <!--  Thymeleaf 삼항연산자 -->
+      <p> ▼ Thymeleaf 삼항연산자 ▼ </p>
+      <li th:each="dto, status : ${list}" th:text="${dto.sno % 5==0}? ${dto.sno}: ${dto.first}">
+      </li>
     ```
 
-    
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습1_loopinThymeleaf4_Ternary operation.PNG)
+
+
+
+* **삼항연산자 + CSS**
+
+  * sno를 5로 나눈 나머지가 0인 경우에만 특정한 CSS를 적용한다면
+
+    ```html
+    <!--  Thymeleaf 삼항연산자 + 특정 CSS -->
+      <p> ▼ Thymeleaf 삼항연산자 + 특정 CSS ▼ </p>
+      <li th:each="dto, status : ${list}" th:class="${dto.sno % 5==0}? 'target'" th:text="${dto}">
+      </li>
+    ```
+
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습1_loopinThymeleaf4_Ternary operation+css.PNG)
+
+---
+
+
+
+####  :tulip: inline property
+
+* **th:each**
+
+
+
+
+
+---
 
 
 
