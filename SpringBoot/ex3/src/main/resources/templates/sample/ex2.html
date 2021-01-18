@@ -32,6 +32,11 @@
     <span th:unless="${dto.sno % 5 == 0}" th:text="${dto.first}"></span>
   </li>
 
+  <!--  Thymeleaf 삼항연산자 -->
+  <p> ▼ Thymeleaf 삼항연산자 ▼ </p>
+  <li th:each="dto, status : ${list}" th:text="${dto.sno % 5==0}? ${dto.sno}: ${dto.first}">
+  </li>
+
 </ul>
 </body>
 </html>
