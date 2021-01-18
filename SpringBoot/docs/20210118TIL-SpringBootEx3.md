@@ -208,9 +208,31 @@
 
 ####  :tulip: 링크 처리
 
-* **내용**
+* **@{ }**
 
-* 
+  ```html
+  <ul>
+    <li th:each="dto : ${list}" >
+      <a th:href="@{/sample/exView(sno=${dto.sno})}">[[${dto}]]</a>
+    </li>
+  </ul>
+  ```
+
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습3_tymeleaf_link.PNG)
+
+  * sno와 같은 파라미터를 추가하기 위해서는 다음과 같이 '키'와 '값'의 형태를 추가한다.
+
+    ```html
+    <li th:each="dto : ${list}" >
+         <a th:href="@{/sample/exView/{sno}(sno = ${dto.sno})}">[[${dto}]]</a>
+    </li>
+    ```
+
+    * 실행화면
+
+      ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습4_tymeleaf_link2.PNG)
 
 
 

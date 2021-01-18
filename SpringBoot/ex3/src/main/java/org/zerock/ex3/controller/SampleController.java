@@ -24,10 +24,11 @@ public class SampleController {
   }
 
   // Sample DTO의 객체를 Model에 추가해서 전달합니다.
-  @GetMapping("/ex2")
+  @GetMapping({"/ex2", "/exLink"})
   public void exModel(Model model) {
     // SampleDTO 타입의 객체 20개 추가하고 이를 Model에 담아서 전송합니다.
-    List<SampleDTO> list = IntStream.rangeClosed(1, 20).asLongStream().mapToObj(i -> {
+    List<SampleDTO> list = IntStream.rangeClosed(1, 20).asLongStream().
+        mapToObj(i -> {
       SampleDTO dto = SampleDTO.builder()
           .sno(i)
           .first("First.." + i)
