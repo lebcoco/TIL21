@@ -43,7 +43,7 @@
 
 ####  :tulip: loop in Thymeleaf
 
-* th:each
+* **th:each**
 
   ```html
   <!DOCTYPE html>
@@ -65,22 +65,71 @@
   * 실행화면
     ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습1_loopinThymeleaf.PNG)
 
-* state(상태) 객체
+
+
+* **state(상태) 객체**
 
   * 상태 객체에는 index, count 속성을 이용할 수 있다.
   * index는 0부터 시작하고, count는 1부터 시작한다. 
 
-  ```html
-  <li th:each="dto, state : ${list}">
-      [[${state.index}]] --- [[${dto}]]
-  </li>
-  ```
+    ```html
+    <li th:each="dto, state : ${list}">
+        [[${state.index}]] --- [[${dto}]]
+    </li>
+    ```
 
   * 실행화면
 
     ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습1_loopinThymeleaf2_state.PNG)
 
 
+
+* **th:if**
+
+  * sno의 값이 5인 배수들만 출력하라
+
+    ```html
+     <!--  Thymeleaf 반복문과 if처리 -->
+      <p> ▼ Thymeleaf 반복문과 if처리 ▼ </p>
+      <li th:each="dto, status : ${list}" th:if="${dto.sno % 5 == 0}">
+        [[${dto}]]
+      </li>
+    ```
+
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습1_loopinThymeleaf3_if.PNG)
+
+
+
+* **th:if 와 th:unless**
+
+  * Thymeleaf는 'if~else' 묶음으로 처리하지 않고, 단독으로 처리한다.
+
+  * sno가 5로 나눈 나머지가 0인 경우에는 sno만을 출력하고, 그렇지 않다면 SampleDTO의 first를 출력하라
+
+    ```html
+    <!--  Thymeleaf th:if 와 th:unless -->
+      <p> ▼ Thymeleaf th:if 와 th:unless ▼ </p>
+      <li th:each="dto, status : ${list}">
+        <span th:if="${dto.sno % 5 == 0}" th:text="${'-----------------' +dto.sno}"></span>
+        <span th:unless="${dto.sno % 5 == 0}" th:text="${dto.first}"></span>
+      </li>
+    ```
+
+  * 실행화면
+
+    <img src="C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습1_loopinThymeleaf3_ifelse.PNG" style="align:left; zoom:70%; "/>
+
+* **삼항 연산자**
+
+  * 단순 if와 같이 2개의 항만으로 처리할 수 있다.
+
+    ```
+    
+    ```
+
+    
 
 
 

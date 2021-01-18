@@ -18,6 +18,20 @@
   <li th:each="dto, state : ${list}">
     [[${state.index}]] --- [[${dto}]]
   </li>
+
+  <!--  Thymeleaf 반복문과 if처리 -->
+  <p> ▼ Thymeleaf 반복문과 if처리 ▼ </p>
+  <li th:each="dto, status : ${list}" th:if="${dto.sno % 5 == 0}">
+    [[${dto}]]
+  </li>
+
+  <!--  Thymeleaf th:if 와 th:unless -->
+  <p> ▼ Thymeleaf th:if 와 th:unless ▼ </p>
+  <li th:each="dto, status : ${list}">
+    <span th:if="${dto.sno % 5 == 0}" th:text="${'-----------------' +dto.sno}"></span>
+    <span th:unless="${dto.sno % 5 == 0}" th:text="${dto.first}"></span>
+  </li>
+
 </ul>
 </body>
 </html>
