@@ -163,11 +163,25 @@
 
 ####  :tulip: inline property
 
-* **th:each**
+* **th:inline**
 
+  * 속성값을 javascript로 지정
 
+    ```html
+    <script th:inline="javascript">
+      var msg = [[${result}]];
+      var dto = [[${dto}]];
+    </script>
+    ```
 
+    * 브라우저에서 경로는 sample/exInline으로 호출하고, 브라우저는 sample/ex3을 다시 호출하여 결과를 보여준다.
 
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습2_loopinThymeleaf4_inline.PNG)
+
+    * 별도의 처리가 없음애도 문자열을 자동으로 `""`이 추가되어 문자열이 된다.
+    * 같이 전송된 dto는 Json 포맷의 문자열이 된 것을 볼 수 있다.
 
 ---
 
