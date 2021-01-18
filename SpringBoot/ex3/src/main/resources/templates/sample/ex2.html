@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<ul>
+  <!--  Thymeleaf 반복문 처리
+        th:each = "변수: ${목록}" -->
+  <li th:each="dto : ${list}">
+    [[${dto}]]
+  </li>
+</ul>
+</body>
+</html>
