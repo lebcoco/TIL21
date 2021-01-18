@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -8,8 +8,15 @@
 <ul>
   <!--  Thymeleaf 반복문 처리
         th:each = "변수: ${목록}" -->
+  <p> ▼ Thymeleaf 반복문 th:each ▼ </p>
   <li th:each="dto : ${list}">
     [[${dto}]]
+  </li>
+
+  <!--  Thymeleaf 반복문 상태(state)객체 -->
+  <p> ▼ Thymeleaf 반복문 상태(state)객체 ▼ </p>
+  <li th:each="dto, state : ${list}">
+    [[${state.index}]] --- [[${dto}]]
   </li>
 </ul>
 </body>
