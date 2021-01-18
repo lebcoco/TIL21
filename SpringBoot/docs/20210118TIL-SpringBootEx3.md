@@ -234,6 +234,34 @@
 
       ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습4_tymeleaf_link2.PNG)
 
+---
+
+
+
+####  :tulip: Thymeleaf의 기본 객체와 LocalDateTime
+
+* **basic objects**
+
+  * sno를 모두 5자리로 만들어라
+
+    ```html
+      <!-- 기본 객체와 LocalDateTime-->
+      <p> ▼ Thymeleaf localDateTime ▼ </p>
+      <li th:each="dto : ${list}">
+        [[${#numbers.formatInteger(dto.sno,5)}]]
+      </li>
+    ```
+
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0118실습5_tymeleaf_localDateTime1.PNG)
+
+  
+
+  :point_right: 편리하게 처리하기 위해 build.gradle에 의존성을 추가합니다. 
+
+  * [의존성 추가 링크 바로가기](https://github.com/thymeleaf/thymeleaf-extras-java8time)
+
 
 
 
