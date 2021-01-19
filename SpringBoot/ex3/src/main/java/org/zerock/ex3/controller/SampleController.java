@@ -104,4 +104,10 @@ public class SampleController {
     System.out.println("RequestPath: " + sno);
     return "sample/exTemplate";
   }
+
+  // 부트스트랩 템플릿
+  @GetMapping({"/exLayout1","/exLayout2", "/exTemplate", "/exSidebar"})
+  public void exLayout1() {
+    log.info("exLayout............");
+  }
 }
