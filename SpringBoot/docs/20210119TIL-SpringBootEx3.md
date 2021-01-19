@@ -34,7 +34,9 @@
 
     ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0119실습_ex3_thymeleaf-parameter1.png)
 
-    
+    * 재사용 유무에 따라 다른 코드 방식
+
+      ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0119실습_ex3_thymeleaf-parameter2.png)
 
 
 
