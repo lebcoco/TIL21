@@ -17,11 +17,8 @@
   <link th:href="@{/css/simple-sidebar.css}" rel="stylesheet">
 
 </head>
-
 <body>
-
 <div class="d-flex" id="wrapper">
-
   <!-- Sidebar -->
   <div class="bg-light border-right" id="sidebar-wrapper">
     <div class="sidebar-heading">Start Bootstrap </div>
@@ -35,7 +32,6 @@
     </div>
   </div>
   <!-- /#sidebar-wrapper -->
-
   <!-- Page Content -->
   <div id="page-content-wrapper">
 
@@ -68,19 +64,14 @@
         </ul>
       </div>
     </nav>
-
     <div class="container-fluid">
       <th:block th:replace ="${content}"></th:block>
     </div>
   </div>
   <!-- /#page-content-wrapper -->
-
 </div>
 <!-- /#wrapper -->
-
 <!-- Bootstrap core JavaScript -->
-<!--<script src="vendor/jquery/jquery.min.js"></script>-->
-<!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
 <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
 <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 
@@ -91,7 +82,6 @@
     $("#wrapper").toggleClass("toggled");
   });
 </script>
-
 </body>
 </th:block>
 </html>

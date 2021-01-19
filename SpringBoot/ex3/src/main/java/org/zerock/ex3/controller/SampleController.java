@@ -62,8 +62,9 @@ public class SampleController {
   public void ex3() {
     log.info("ex3");
   }
+
   // Thymeleaf 레이아웃
-//  @GetMapping("/exLayout1")
+//  @GetMapping({"/exLayout1", "/exTemplate","/exSidebar"})
 //  public void exLayout1(){
 //    log.info("exLayout............");
 //  }
@@ -74,11 +75,11 @@ public class SampleController {
 //    log.info("exLayout............");
 //  }
 
-  //layout template
-  @GetMapping({"/exLayout1", "/exLayout2", "/exTemplate"})
-  public void exLayout() {
-    log.info("exLayout............");
-  }
+//  //layout template
+//  @GetMapping({"/exLayout1", "/exLayout2", "/exTemplate"})
+//  public void exLayout() {
+//    log.info("exLayout............");
+//  }
 
 //  @GetMapping("/exLayout1")
 //  public String exLayout1(){
@@ -92,20 +93,20 @@ public class SampleController {
 //    return "sample/exTemplate";
 //  }
 
-  @GetMapping("/exView")
-  public String exView1(@RequestParam("sno") Long sno) {
-    System.out.println("RequestParam: " +sno);
-    return "sample/exTemplate";
-  }
+//  @GetMapping("/exView")
+//  public String exView1(@RequestParam("sno") Long sno) {
+//    System.out.println("RequestParam: " +sno);
+//    return "sample/exTemplate";
+//  }
+//
+//
+//  @GetMapping("/exView/{sno}")
+//  public String exView2(@PathVariable("sno") Long sno) {
+//    System.out.println("RequestPath: " + sno);
+//    return "sample/exTemplate";
+//  }
 
-
-  @GetMapping("/exView/{sno}")
-  public String exView2(@PathVariable("sno") Long sno) {
-    System.out.println("RequestPath: " + sno);
-    return "sample/exTemplate";
-  }
-
-  // 부트스트랩 템플릿
+ //  부트스트랩 템플릿
   @GetMapping({"/exLayout1","/exLayout2", "/exTemplate", "/exSidebar"})
   public void exLayout1() {
     log.info("exLayout............");

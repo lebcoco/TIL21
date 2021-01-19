@@ -40,11 +40,13 @@
 
 
 
-####  :tulip: Reference 
+* **레이아웃 템플릿 만들기** 
 
-1. Thymeleaf와 jsp 차이 
-   
-   * [참고-]()
-   
-     
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0119실습_ex3_thymeleaf-template1.png)
+
+  * 실행화면2-부트스트랩
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0119실습_ex3_thymeleaf-template2.png)
 
