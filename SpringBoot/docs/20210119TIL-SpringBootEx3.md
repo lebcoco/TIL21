@@ -28,6 +28,16 @@
 
 
 
+* **파라미터 방식의 처리**
+
+  * 실행화면
+
+    ![](C:\Users\ADMIN\IdeaProjects\TIL21\SpringBoot\docs\img\0119실습_ex3_thymeleaf-parameter1.png)
+
+    
+
+
+
 ####  :tulip: Reference 
 
 1. Thymeleaf와 jsp 차이 
