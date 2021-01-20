@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcabfac4-b04e-4d24-9b2e-2fb9cf88e68d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ex3/src/main/java/org/zerock/ex3/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/src/main/java/org/zerock/ex3/controller/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex3/src/main/resources/templates/layout/layout1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/layout/layout1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,7 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -37,6 +37,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611042837363</updated>
       <workItem from="1611042839097" duration="35000" />
+      <workItem from="1611100701008" duration="617000" />
+      <workItem from="1611102176508" duration="728000" />
     </task>
     <servers />
   </component>
