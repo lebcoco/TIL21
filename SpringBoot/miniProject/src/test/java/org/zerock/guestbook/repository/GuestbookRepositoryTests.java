@@ -85,4 +85,36 @@ public class GuestbookRepositoryTests {
       System.out.println(guestbook);
     });
   }
+  
+  // 다중 항목 검색 테스트
+  // 제목(title)혹은 내용(content)에 특정한 키워드가 있고 'gno가 0보다 크다'와 같은 조건을 처리해본다
+  @Test
+  public void testQuery2(){
+    Pageable pageable = PageRequest.of(0, 10, Sort.by("gno").descending());
+    // 동적 처리를 위한 Q도메인 클래스를 얻어온다.
+    // Q도메인 클래스를 이용하면 entitiy 클래스에 선언된 title, content같은 필드를 변수로 활용할 수 있음.
+    QGuestbook qGuestbook = QGuestbook.guestbook;
+
+    String keyword = "1";
+
+    // BooleanBuilder는 where문에 들어가는 조건들을 넣어주는 컨테이너
+    BooleanBuilder builder = new BooleanBuilder();
+
+    BooleanExpression exTitle =  qGuestbook.title.contains(keyword);
+
+    BooleanExpression exContent =  qGuestbook.content.contains(keyword);
+
+    // exTitle과 exContent라는 BooleanExpression을 결합하는 부분
+    BooleanExpression exAll = exTitle.or(exContent); // 1----------------
+
+    // 결합 부분을 BooleanBuilder에 추가
+    builder.and(exAll); //2-----
+
+    // 'gno가 0보다 크다'라는 조건을 추가한 부분
+    builder.and(qGuestbook.gno.gt(0L)); // 3-----------
+
+    Page<Guestbook> result = guestbookRepository.findAll(builder, pageable);
+
+
+  }
 }
