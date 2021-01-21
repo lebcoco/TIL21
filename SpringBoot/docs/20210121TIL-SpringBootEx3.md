@@ -282,7 +282,8 @@
       }
       ```
 
-* 
+* id = entity
+  속성(이름,이메일,비밀번호 등)이 바뀌더라도 여전히 같은 것으로 인식되는 **객체(id)**를 **엔티티(entity)**라고 한다.
 
 ---
 
@@ -309,6 +310,19 @@
 4. [Rest](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html)
 
 5. [ORM & JPA-1](https://victorydntmd.tistory.com/195)
+
 6. [ORM & JPA-2](https://bamdule.tistory.com/38) :star:
+
 7. [ORM & JPA-3](https://suhwan.dev/2019/02/24/jpa-vs-hibernate-vs-spring-data-jpa/)
-8. [field](https://cloudstudying.kr/questions/283)
+
+8. [ORM](https://gmlwjd9405.github.io/2019/02/01/orm.html)
+
+9. [JPA](https://dahye-jeong.gitbook.io/spring/spring/2020-04-11-jpa-basic)
+
+10. [field](https://cloudstudying.kr/questions/283)
+
+11. [object & entity](https://jaeyeolshin.github.io/2016-02-06/difference-between-entity-and-value-object/)
+
+    [▷원문](https://culttt.com/2014/04/30/difference-entities-value-objects/)
+
+    
