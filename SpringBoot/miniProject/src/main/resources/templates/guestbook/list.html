@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 
 <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
   <th:block th:fragment="content">
@@ -11,6 +10,7 @@
     <input type="text" name="beforeAmt" id="beforeAmt" value="" class="money" size="61" align="left" onkeyup="eventKeyup(this.value)"/>
     <input type="text" name="afterAmt" id="afterAmt" value="" class="money" size="61" align="left" />
     <!--test end-->
+
 
     <table class="table table-striped">
       <thead>
@@ -30,17 +30,35 @@
         <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
       </tr>
 
-      <!--test2 START [input 동시입력]-->
+      <!--test2 [input 동시입력] START-->
 
       <script type="text/javaScript">
         function eventKeyup(str){
           $("#afterAmt").val(str);    // jQuery 이용
+          // console.log(str);
           //document.all.afterAmt.value = str;    // jsp name 이용
           //document.getElementById("afterAmt").value = str;   // jsp id 이용
         }
       </script>
 
-      <!--test2 END-->
+      <!--test2 [input 동시입력] END-->
+
+      <!--test [console.log 입력] start -->
+      <script>
+          var a = 1;
+          var b = 'hello';
+          console.log(a);
+          console.log(b);
+      </script>
+      <!--test [console.log 입력] end-->
+
+      <!-- test [input concole.log 출력 - change이벤트 활용] 시작-->
+      <script type="text/javascript">
+        $("#beforeAmt").on('change', function(e){
+          console.log($(this).val());
+        })
+      </script>
+      <!-- test [input concole.log 출력 - change이벤트 활용] 끝-->
 
       </tbody>
     </table>
@@ -66,3 +84,5 @@
   </th:block>
 
 </th:block>
+
+
