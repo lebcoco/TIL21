@@ -11,3 +11,11 @@
 
 
 ![](https://roadmap.sh/roadmaps/frontend.png)
+
+
+
+
+
+:eyes: 이 로드맵도 자세히 봐바야지
+
+[Tools You Need to Know to Become a Web Developer](https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/)
