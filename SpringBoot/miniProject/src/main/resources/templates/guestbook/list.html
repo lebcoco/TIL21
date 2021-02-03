@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+
 <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
   <th:block th:fragment="content">
     <h1 class = "mt-4">GuestBook List Page</h1>
+
+    <!--test start [input 동시입력]-->
+    <input type="text" name="beforeAmt" id="beforeAmt" value="" class="money" size="61" align="left" onkeyup="eventKeyup(this.value)"/>
+    <input type="text" name="afterAmt" id="afterAmt" value="" class="money" size="61" align="left" />
+    <!--test end-->
+
     <table class="table table-striped">
       <thead>
         <tr>
@@ -20,6 +29,18 @@
 
         <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
       </tr>
+
+      <!--test2 START [input 동시입력]-->
+
+      <script type="text/javaScript">
+        function eventKeyup(str){
+          $("#afterAmt").val(str);    // jQuery 이용
+          //document.all.afterAmt.value = str;    // jsp name 이용
+          //document.getElementById("afterAmt").value = str;   // jsp id 이용
+        }
+      </script>
+
+      <!--test2 END-->
 
       </tbody>
     </table>
