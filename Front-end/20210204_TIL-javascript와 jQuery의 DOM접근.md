@@ -10,7 +10,7 @@
 
 > 2021.01.30 TIL-DOM에 이어 javascript와 jQuery의 DOM 접근에 대한 차이를 알아본다.
 >
-> [2021.30 TIL-DOM 바로가기]()
+> [2021.30 TIL-DOM 바로가기](https://github.com/lebcoco/TIL21/blob/main/Front-end/20210130_TIL-DOM.md)
 
 
 
