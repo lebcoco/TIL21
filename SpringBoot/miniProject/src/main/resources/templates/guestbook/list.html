@@ -7,6 +7,7 @@
     <h1 class = "mt-4">GuestBook List Page</h1>
 
     <!--test start [input 동시입력]-->
+    <p>▼ input test</p>
     <input type="text" name="beforeAmt" id="beforeAmt" value="" class="money" size="61" align="left" onkeyup="eventKeyup(this.value)"/>
     <input type="text" name="afterAmt" id="afterAmt" value="" class="money" size="61" align="left" />
     <!--test end-->
@@ -31,7 +32,6 @@
       </tr>
 
       <!--test2 [input 동시입력] START-->
-
       <script type="text/javaScript">
         function eventKeyup(str){
           $("#afterAmt").val(str);    // jQuery 이용
@@ -81,6 +81,13 @@
       </li>
 
     </ul>
+
+<!--    4.7.2 등록처리와 페이지의 모달창-->
+    <script th:inline=javascript">
+      var msg = [[${msg}]];
+      console.log(msg);
+
+    </script>
   </th:block>
 
 </th:block>
