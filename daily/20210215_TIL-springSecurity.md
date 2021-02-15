@@ -8,6 +8,10 @@
 
 
 
+**SSO (Single Sign-On)**
+
+* SSO(Single Sign-On)는 사용자가 사용하는 모든 애플리케이션에 로그인할 필요가 없음을 의미합니다. 사용자가 한 번 로그인하면 다른 앱에도 해당 자격 증명이 사용됩니다.
+
 **SpringSecurity**
 
 * 스프링 시큐리티의 기본 Maximum Session 설정은 전역으로 적용되게 되어있다. 
