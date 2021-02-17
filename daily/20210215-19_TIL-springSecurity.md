@@ -68,10 +68,20 @@
   * 실행화면
   
     ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/0215_maximumSession.png)
+  
+* 0217 업무기록
 
-
-
-
+  * SSH접속시 firewall 켜져있으면 접속안됨
+    * `systemctl stop firewall`
+  * nginx access -control -allow -origin Error
+  * SSH 종료
+    * `ctrl+D`
+  * Host 등록
+    * `vi /etc/hosts`
+  * 자동 중간 정렬
+    * `ctrl+shift+E`
+  * Ctrl+Z => `U`
+  * nginx설치할 때 Container방식으로 설치할 것.
 
 
 
