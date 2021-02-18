@@ -23,6 +23,24 @@
 
 
 
+3. **Test 진행**
+
+   * TEST 구성도
+
+     ![](C:\Users\ADMIN\IdeaProjects\TIL21\daily\img\0218_X-Frame-Options to deny+CORS 이슈.PNG)
+
+   * TEST 이전 오류 화면
+
+     ![](C:\Users\ADMIN\IdeaProjects\TIL21\daily\img\0218_X-Frame-Options to deny+CORS 이슈-에러화면.PNG)
+
+   * TEST 이후 해결 화면
+
+     ![](C:\Users\ADMIN\IdeaProjects\TIL21\daily\img\0218_X-Frame-Options to deny+CORS 이슈-해결화면.PNG)
+
+
+
+
+
 :pineapple: **Reference**
 
 [1. 스프링부트에서 톰캣 말고 다른 내장 서버 쓰고싶을 때](https://engkimbs.tistory.com/755)
