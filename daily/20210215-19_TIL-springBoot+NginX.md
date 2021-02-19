@@ -27,15 +27,15 @@
 
    * TEST 구성도
 
-     ![](C:\Users\ADMIN\IdeaProjects\TIL21\daily\img\0218_X-Frame-Options to deny+CORS 이슈.PNG)
+     ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/0218_X-Frame-Options%20to%20deny%2BCORS%20%EC%9D%B4%EC%8A%88.PNG)
 
    * TEST 이전 오류 화면
 
-     ![](C:\Users\ADMIN\IdeaProjects\TIL21\daily\img\0218_X-Frame-Options to deny+CORS 이슈-에러화면.PNG)
+     ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/0218_X-Frame-Options%20to%20deny%2BCORS%20%EC%9D%B4%EC%8A%88-%EC%97%90%EB%9F%AC%ED%99%94%EB%A9%B4.PNG)
 
    * TEST 이후 해결 화면
 
-     ![](C:\Users\ADMIN\IdeaProjects\TIL21\daily\img\0218_X-Frame-Options to deny+CORS 이슈-해결화면.PNG)
+     ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/0218_X-Frame-Options%20to%20deny%2BCORS%20%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0%ED%99%94%EB%A9%B4.PNG)
      
      
  4. **$.ajax**
