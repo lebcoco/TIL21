@@ -23,21 +23,21 @@
 
 **테스트구조**
 
-* ![](C:\TIL21\daily\img\2021-02-22_이슈해결테스트구성도.png)
+* ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/2021-02-22_%EC%9D%B4%EC%8A%88%ED%95%B4%EA%B2%B0%ED%85%8C%EC%8A%A4%ED%8A%B8%EA%B5%AC%EC%84%B1%EB%8F%84.png)
 
 **테스트 진행 과정**
 
 1. 오류
 
-   * ![](C:\TIL21\daily\img\스크린샷, 2021-02-22_crossOrigin오류1.png)
+   * ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202021-02-22_crossOrigin%EC%98%A4%EB%A5%981.png)
 
 2. 해결
 
-   * ![](C:\TIL21\daily\img\스크린샷, 2021-02-22_crossOrigin해결1.png)
+   * ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202021-02-22_crossOrigin%ED%95%B4%EA%B2%B01.png)
 
 3. 해결2
 
-   * ![](C:\TIL21\daily\img\스크린샷, 2021-02-22_crossOrigin정답.png)
+   * ![](https://github.com/lebcoco/TIL21/blob/main/daily/img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202021-02-22_crossOrigin%EC%A0%95%EB%8B%B5.png)
 
    
 
